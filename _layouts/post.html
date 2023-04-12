@@ -36,10 +36,12 @@
                     {%- include body.html -%}
 
                     {% if page.previous %}
+                        <p>Page Previous</p>
                         <a href="{{site.baseurl}}{{page.previous.url}}" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{page.previous.title}}">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     {% else %}
+                        <p>Not Page Previous</p>
                         <a href="{{site.baseurl}}/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{site.title}}">
                             <i class="fa fa-angle-left"></i>
                         </a>
